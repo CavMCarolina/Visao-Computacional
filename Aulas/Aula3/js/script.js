@@ -17,34 +17,6 @@ cv['onRuntimeInitialized'] = function () {
             statusEl.textContent = 'Imagem Carregada. Clique em Converter!';
         }
     });
-    // btnCinza.addEventListener('click', function () {
-    //     let cinza = new cv.Mat();
-    //     cv.cvtColor(src, cinza, cv.COLOR_RGBA2GRAY);
-    //     cv.imshow('canvasSaida', cinza);
-    //     cinza.delete();
-
-    //     // Adicionando outras conversões
-    //     let rgb = new cv.Mat();
-    //     let hsv = new cv.Mat();
-    //     cv.cvtColor(src, rgb, cv.COLOR_RGBA2RGB);
-    //     cv.cvtColor(rgb, hsv, cv.COLOR_RGB2HSV);
-
-    //     cv.imshow('canvasHsv', hsv);
-    //     hsv.delete();
-
-    //     let canais = new cv.MatVector();
-    //     cv.split(rgb, canais);
-
-    //     cv.imshow('canvasR', canais.get(0));
-    //     cv.imshow('canvasG', canais.get(1));
-    //     cv.imshow('canvasB', canais.get(2));
-
-    //     rgb.delete();
-    //     canais.delete();
-
-    //     statusEl.textContent = 'Conversão concluida!';
-    // })
-
     btnContraste.addEventListener('click', function () {
         let ajustada = new cv.Mat();
         // Brilho +50 e Contraste x1.3
