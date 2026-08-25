@@ -7,7 +7,7 @@
     <!-- Biblioteca OpenCV, via CDN -->
     <script src="https://docs.opencv.org/4.x/opencv.js"></script>
     <title>Visão Computacional</title>
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="../style/style.css" />
 </head>
 
 <body>
@@ -45,6 +45,10 @@
                     <canvas id="canvasSaida"></canvas>
                 </div>
                 <div class="canvas-card">
+                    <h3>Mostrar Máscara</h3>
+                    <canvas id="canvasMascara"></canvas>
+                </div>
+                <div class="canvas-card">
                     <h3>Recortar Imagem</h3>
                     <canvas id="canvasRecortar"></canvas>
                 </div>
@@ -66,7 +70,7 @@
                 </div> -->
             </div>
             <div class="controls">
-                <button id="btnCinza" class="btn btn--primary" disabled>Converter</button>
+                <button id="btnContraste" class="btn btn--primary" disabled>Converter</button>
             </div>
             <p id="status" class="status">Carregando OpenCV.js...</p>
         </section>
