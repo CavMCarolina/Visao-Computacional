@@ -25,13 +25,13 @@
                 <span class="badge">cv.imread</span>
                 <span class="badge">cv.imshow</span>
                 <span class="badge">cv.cvtColor</span>
+                <span class="badge">cv.convertScaleAbs</span>
             </div>
-            <h1>Visão Computacional - Cinza, HSV e RGB</h1>
-            <p>Primeiro contato com OpenCV.js: carregar a imagem no navegador, exibi-la no Canvas e converter para
-                escala de cinza, HSV e RGB.</p>
+            <h1>Aula 3 | AND, OR, XOR - Brilho e Constraste</h1>
+            <p>Carregar a imagem no navegador, exibi-la no Canvas e ajustar brilho e constraste</p>
         </section>
         <section class="stage_panel">
-            <h2>Carregue uma imagem e converta para cinza, HSV e RGB</h2>
+            <h2>Carregue uma imagem e ajuste o brilho e contraste</h2>
             <div class="upload-row">
                 <input type="file" id="inputImage" accept="img/+" />
             </div>
@@ -41,25 +41,29 @@
                     <canvas id="canvasOriginal"></canvas>
                 </div>
                 <div class="canvas-card">
-                    <h3>Escala de Cinza</h3>
+                    <h3>Ajuste de Brilho e Constraste</h3>
                     <canvas id="canvasSaida"></canvas>
                 </div>
                 <div class="canvas-card">
-                    <h3>Cor HSV</h3>
-                    <canvas id="canvasHsv"></canvas>
+                    <h3>Recortar Imagem</h3>
+                    <canvas id="canvasRecortar"></canvas>
                 </div>
                 <div class="canvas-card">
-                    <h3>Cor R</h3>
-                    <canvas id="canvasR"></canvas>
+                    <h3>Utilizar AND</h3>
+                    <canvas id="canvasAnd"></canvas>
                 </div>
                 <div class="canvas-card">
-                    <h3>Cor G</h3>
-                    <canvas id="canvasG"></canvas>
+                    <h3>Utilizar OR</h3>
+                    <canvas id="canvasOr"></canvas>
                 </div>
                 <div class="canvas-card">
-                    <h3>Cor B</h3>
-                    <canvas id="canvasB"></canvas>
+                    <h3>Utilizar XOR</h3>
+                    <canvas id="canvasXor"></canvas>
                 </div>
+                <!-- <div class="canvas-card">
+                    <h3>Utilizar NOT</h3>
+                    <canvas id="canvasNot"></canvas>
+                </div> -->
             </div>
             <div class="controls">
                 <button id="btnCinza" class="btn btn--primary" disabled>Converter</button>
