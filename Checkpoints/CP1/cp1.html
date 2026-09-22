@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Biblioteca OpenCV, via CDN -->
+    <script src="https://docs.opencv.org/4.x/opencv.js"></script>
+    <title>Visão Computacional</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header class="fiap-header">
+        <div class="fiap-header__brand">
+            <span class="fiap-header__logo">FIAP</span>
+            <span class="fiap-header__divider"></span>
+            <span class="fiap-header__title">Visão Computacional Aplicada</span>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <div class="badge_row">
+                <span class="badge">cv.imread</span>
+                <span class="badge">cv.imshow</span>
+                <span class="badge">cv.cvtColor</span>
+                <span class="badge">cv.convertScaleAbs</span>
+            </div>
+            <h1>Checkpoint 1</h1>
+            <p>Simulando o efeito de profundidade de campo de uma câmera</p>
+        </section>
+        <section class="stage_panel">
+            <!-- <h2>Carregue uma imagem e ajuste o brilho e contraste</h2> -->
+            <div class="upload-row">
+                <input type="file" id="inputImage" accept="img/+" />
+            </div>
+            <div class="canvas-grid">
+                <div class="canvas-card">
+                    <h3>Original</h3>
+                    <canvas id="canvasOriginal"></canvas>
+                </div>
+                <div class="canvas-card">
+                    <h3>1- GaussianBlur</h3>
+                    <canvas id="canvasGaussian"></canvas>
+                </div>
+                <div class="canvas-card">
+                    <h3>2- Blur</h3>
+                    <canvas id="canvasBlur"></canvas>
+                </div>
+                <div class="canvas-card">
+                    <h3>3- Recortar Original</h3>
+                    <canvas id="canvas3"></canvas>
+                </div>
+                <div class="canvas-card">
+                    <h3>4- Recortar GaussianBlur</h3>
+                    <canvas id="canvas4"></canvas>
+                </div>
+                <div class="canvas-card">
+                    <h3>5- Etapa 4 + blur</h3>
+                    <canvas id="canvas5"></canvas>
+                </div>
+                <div class="canvas-card">
+                    <h3>6- Etapa 5 + Etapa 3</h3>
+                    <canvas id="canvas6"></canvas>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="btnContraste" class="btn btn--primary" disabled>Converter</button>
+            </div>
+            <p id="status" class="status">Carregando OpenCV.js...</p>
+        </section>
+
+        <script src="./js/script.js" defer></script>
+    </main>
+
+    <footer class="fiap-footer">
+        <p>Material didático de Visão Computacional Aplicada | FIAP 2026</p>
+    </footer>
+</body>
+
+</html>
